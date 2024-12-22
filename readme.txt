@@ -1,0 +1,1 @@
+digunakan untuk merotasi gambar sebanyak 180 derajat, untuk keperluan variasi data AI
