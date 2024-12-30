@@ -28,8 +28,28 @@ def rotate_images_in_folder(folder_path, output_folder):
             else:
                 print(f"Gagal membaca: {filename}")
 
-# Path folder input dan output
-input_folder = str(input("masukan path folder sumber:"))
-output_folder = f"{input_folder}_output"
+list_folder=["foto_dataset\data_11", 
+             "foto_dataset\data_18", 
+             "foto_dataset\LAWAN DATA 18",
+             "foto_dataset\lawan_data_11",
+             "foto_dataset\marking putih\\rantai lompat maju\data_5",
+             "foto_dataset\marking putih\\rantai lompat maju\data_6",
+             "foto_dataset\marking putih\\rantai lompat maju\data_7",
+             "foto_dataset\marking putih\\rantai lompat maju\data_8",
+             "foto_dataset\marking putih\\rantai ok\data_9",
+             "foto_dataset\marking putih\\rantai ok\data_10",
+             "foto_dataset\marking putih\\rantai ok\data_11",
+             "foto_dataset\marking putih\\rantai ok\data_12",
+             "foto_dataset\marking putih\\rantai_lompat mundur\data_1",
+             "foto_dataset\marking putih\\rantai_lompat mundur\data_2",
+             "foto_dataset\marking putih\\rantai_lompat mundur\data_3",
+             "foto_dataset\marking putih\\rantai_lompat mundur\data_4",
+             "foto_dataset\oke putih",
+             "foto_dataset\\rantai kuning ok"]
 
-rotate_images_in_folder(input_folder, output_folder)
+# Path folder input dan output
+# input_folder = str(input("masukan path folder sumber:"))
+
+for i in range(len(list_folder)):
+    output_folder = f"{list_folder[i]}_rotated"
+    rotate_images_in_folder(list_folder[i], output_folder)
